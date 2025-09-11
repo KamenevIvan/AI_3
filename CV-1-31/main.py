@@ -19,4 +19,4 @@ cv2.circle(circle_image, center, radius, (0, 0, 255, 128), -1)
 image[mask > 0] = circle_image[mask > 0]
 
 # Save the final image as a PNG file
-cv2.imwrite('red_circle.png', image)
+cv2.imwrite('red_circle_lower_alpha.png', image)
