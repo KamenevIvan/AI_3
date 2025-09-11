@@ -1,1 +1,7 @@
 Основной код задания лежит в файле main.py, результат по заданию - red_circle.png. Также в файле red_circle_lower_alpha.png приведён круг с alpha = 25 для лучшей наглядности.
+
+### Использование
+Пример команды:
+```
+python main.py --width 150 --height 150 --radius 60 --alpha 200 --filename custom_circle.png
+```
