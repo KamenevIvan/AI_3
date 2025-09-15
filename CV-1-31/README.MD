@@ -4,7 +4,7 @@
 ### Использование
 Пример команды:
 ```
-python main.py --width 150 --height 150 --radius 60 --alpha 200 --filename custom_circle.png
+python transparency.py --width 150 --height 150 --radius 60 --alpha 200 --filename custom_circle.png
 ```
 
 ### Справка
