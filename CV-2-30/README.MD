@@ -52,12 +52,12 @@ result_remove.jpg: Объект на чёрном фоне (BGR-часть ре�
 ## Пример
 ### Входные данные
 
-! [image1.jpg] (image1.jpg) 
-! [background1.jpg] (background1.jpg).
+![image1.jpg](image1.jpg) 
+![background1.jpg](background1.jpg).
 
 ### Результат
 
-! [out.jpg] (out.jpg).
+![out.jpg](out.jpg).
 
 ## Ограничения
 
