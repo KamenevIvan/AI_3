@@ -12,9 +12,6 @@ def load_img(file_path):
     Returns:
         numpy.ndarray: Изображение в формате BGR (3 канала), если загрузка успешна.
         None: Если файл не найден или не удалось загрузить изображение.
-
-    Raises:
-        ValueError: Если file_path не является строкой или пустой.
     """
     if not isinstance(file_path, str) or not file_path:
         raise ValueError("Ошибка: путь к файлу должен быть непустой строкой")
@@ -39,9 +36,6 @@ def brg_to_hsv(image):
 
     Returns:
         numpy.ndarray: Изображение в формате HSV.
-
-    Raises:
-        ValueError: Если входное изображение None или имеет некорректный формат.
     """
     if image is None:
         raise ValueError("Ошибка: входное изображение не может быть None")
@@ -64,11 +58,6 @@ def create_mask(image_hsv, lower_color_green=np.array([35, 40, 40]),
 
     Returns:
         numpy.ndarray: Бинарная маска (одноканальная, 255 для объекта, 0 для фона).
-
-    Raises:
-        ValueError: Если входное изображение None, имеет некорректный формат,
-                    или параметры lower_color_green/upper_color_green некорректны.
-        ValueError: Если kernel_size не является кортежем из двух положительных чисел.
     """
     if image_hsv is None:
         raise ValueError("Ошибка: входное изображение HSV не может быть None")
@@ -102,8 +91,6 @@ def remove(file_input):
         numpy.ndarray: Изображение в формате BGRA (4 канала), где альфа-канал определяет прозрачность.
         None: Если обработка не удалась.
 
-    Raises:
-        ValueError: Если file_input не является строкой или пустой.
     """
     if not isinstance(file_input, str) or not file_input:
         raise ValueError("Ошибка: путь к файлу должен быть непустой строкой")
@@ -151,9 +138,6 @@ def main(img_input, img_background, img_output, showRes=False):
         numpy.ndarray: Итоговое изображение в формате BGR, если обработка успешна.
         None: Если обработка не удалась.
 
-    Raises:
-        ValueError: Если входные пути не являются строками или пусты,
-                    или showRes не является булевым значением.
     """
     # Проверка входных параметров
     if not isinstance(img_input, str) or not img_input:
